@@ -1,0 +1,264 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Navigation Bar */
+#navbar{
+display: flex;
+align-items: center;
+position: relative;
+top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+/* Navigation Bar:  Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+#logo img{
+    margin: 3px 6px;
+    height: 59px;
+}
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Gabarito', cursive;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/* Home Styling */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 628px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url('../cover image.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Itim', cursive;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Services Section */
+/* #services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background: #eae6e6;
+
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+} */
+
+.appointment{
+    /* border: 2px solid green; */
+    position: relative;
+    top: -115px;
+    height: 60px
+}
+.appointment h1{
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+    font-family: 'Itim', cursive;
+}
+
+
+.box{
+    display: flex;
+    position: absolute;
+    top: 111%;
+    left: 25px;
+    height: 372px;
+    right: 25px;
+    justify-content: center;
+    border-radius: 15px;
+    /* border: 2px solid brown; */
+}
+.card {
+    background-color: rgb(177, 114, 114);
+    width: 473px;
+    height: 345px;
+    position: relative;
+    top: 0px;
+    margin: 25px;
+    border-radius: 15px;
+}
+.card-image {
+    background-color: rgb(144, 144, 212);
+    height: 230px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px;
+}
+.card h2{
+    font-family: 'Itim', cursive;
+    text-align: center;
+    
+}
+.item1 {
+    background-image: url(img1.jpg);
+}
+.item2 {
+    background-image: url(img2\ \(2\).jpg);
+}
+.item3 {
+    background-image: url(imgnew3.jpg);
+}
+          /* CLIENT SECTION */
+#client-section{
+    height: 345px;
+    /* border: 5px solid red; */
+    position: relative;
+    top: 350px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('veggies.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background-size: cover;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 34px;
+}
+#clients img{
+    height: 125px;
+}
+
+ /* CONTACT SECTION */
+#contact{
+   /* border: 2px solid purple;  */
+   position: relative;
+   top: 380px;
+   height: 800px;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url(businessman.jpg) no-repeat center center/cover;
+    height: 800px;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+
+}
+#contact-box form{
+    width: 48%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family:'Gabarito', cursive;
+}
+   
+footer{
+    /* border: 2px solid rgb(192, 12, 12); */
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    position: relative;
+    top: 340px;
+}
+
+
+
+
+
+/* Utility Classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Itim', cursive;
+ }
+ .h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+ }
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(226 148 113);
+    color: black;
+    margin: 35px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Gabarito', cursive;
+}
+.center{
+    text-align: center;
+    font-family: 'Itim', cursive;
+}
